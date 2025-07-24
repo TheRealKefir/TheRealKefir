@@ -1,0 +1,45 @@
+name: Switch README Theme
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # запуск каждый час в 0 минуте
+
+jobs:
+  switch-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get current hour (UTC+5)
+        id: gettime
+        run: |
+          # Получаем текущий час в UTC+5
+          HOUR_UTC=$(date -u +'%H')
+          HOUR_EKB=$(( (10#$HOUR_UTC + 5) % 24 ))
+          echo "HOUR=$HOUR_EKB" >> $GITHUB_OUTPUT
+
+      - name: Switch README based on time
+        run: |
+          echo "Current hour in Yekaterinburg timezone: ${{ steps.gettime.outputs.HOUR }}"
+          HOUR=${{ steps.gettime.outputs.HOUR }}
+
+          if [ $HOUR -ge 8 ] && [ $HOUR -lt 18 ]; then
+            cp README_light.md README.md
+            echo "Switched to light theme"
+          else
+            cp README_dark.md README.md
+            echo "Switched to dark theme"
+          fi
+
+      - name: Commit and push if changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add README.md
+            git commit -m "Auto-switch README theme based on Yekaterinburg time"
+            git push
+          else
+            echo "No changes to commit"
+          fi
