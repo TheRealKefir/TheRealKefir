@@ -1,15 +1,19 @@
 <img src="https://raw.githubusercontent.com/TheRealKefir/TheRealKefir/main/assets/загруженное.jpg" width="100%" alt="anime banner"/>
 
 <h1 align="center">Hi, I'm TheRealKefir 👋</h1>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&color=9B59B6&width=600&lines=TheRealKefir+coding+in+darkness;Summoning+anime+waifus;Typing+in+JetBrains+IDE;And+hates+web+dewelopment..." />
+</p>
+
 <p align="center">💻 Web Developer | 🐍 Python Coder | 📚 Learning Java & C++</p>
 
 ---
 
 ### 🧠 About Me
 
-- 🔭 I’m working on web projects using HTML/CSS/JS & Python  
+- 🔭 I’m working on web projects using HTML/CSS/JS & Python
 - 🌱 Currently learning **Java** and **C++** to level up my skills
-- 🖥️ JetBrains gang (PyCharm, IntelliJ, CLion)  
+- 🖥️ JetBrains gang (PyCharm, IntelliJ, CLion)
 - 🌸 Sometimes caught in anime vibes
 
 ---
