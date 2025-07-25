@@ -14,7 +14,10 @@
 - 🖥️ Using JetBrains IDEs (PyCharm, IntelliJ, CLion)  
 
 ---
+### ⌛ Weekly Coding Stats
 
+![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=TheRealKefir&layout=compact&theme=tokyonight)
+___
 ### Tech Stack
 
 - Python | HTML5 | CSS3 | JavaScript | Java | C++  
