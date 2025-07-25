@@ -2,7 +2,7 @@
 
 <h1 align="center">Hi, I'm TheRealKefir 👋</h1>
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&color=9B59B6&width=600&lines=TheRealKefir+coding+in+darkness;Summoning+anime+waifus;Typing+in+JetBrains+IDE;And+hates+web+dewelopment..." />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&color=9B59B6&width=600&lines=TheRealKefir+coding+in+darkness;Summoning+anime+waifus;Typing+in+JetBrains+IDE;And+hates+web+development..." />
 </p>
 
 <p align="center">💻 Web Developer | 🐍 Python Coder | 📚 Learning Java & C++</p>
