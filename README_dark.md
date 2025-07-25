@@ -17,7 +17,10 @@
 - 🌸 Sometimes caught in anime vibes
 
 ---
+### ⌛ Weekly Coding Stats
 
+![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=TheRealKefir&layout=compact&theme=tokyonight)
+___
 ### 🧰 Tech Stack
 
 <div align="center">
