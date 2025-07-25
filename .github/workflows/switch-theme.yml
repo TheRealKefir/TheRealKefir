@@ -22,6 +22,12 @@ jobs:
       - name: Switch README based on time
         run: |
           echo "Current hour in Yekaterinburg timezone: $HOUR"
+          ls -l
+          echo "README_light.md content preview:"
+          head -5 README_light.md
+          echo "README_dark.md content preview:"
+          head -5 README_dark.md
+
           if [ $HOUR -ge 8 ] && [ $HOUR -lt 18 ]; then
             cp README_light.md README.md
             echo "Switched to light theme"
@@ -34,14 +40,10 @@ jobs:
         env:
           HOUR: ${{ steps.gettime.outputs.HOUR }}
 
-      - name: Commit and push if changes
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet; then
-            git add README.md
-            git commit -m "Auto-switch README theme based on Yekaterinburg time"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          git add README.md
+          git commit -m "Auto-switch README theme based on Yekaterinburg time" || echo "No changes to commit"
+          git push
